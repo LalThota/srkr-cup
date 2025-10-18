@@ -36,7 +36,7 @@ app.use(express.static("public"))
 
 // Configure CORS
 app.use(cors({
-  origin: ["http://localhost:3001", "http://localhost:3002", "http://127.0.0.1:3002"],
+  origin: "*",
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
